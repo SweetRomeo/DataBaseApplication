@@ -1,0 +1,4 @@
+C:/Users/berke/CLionProjects/DataBaseApplication/cmake-build-debug/CMakeFiles/sqlite3.dir
+C:/Users/berke/CLionProjects/DataBaseApplication/cmake-build-debug/CMakeFiles/DataBaseApplication.dir
+C:/Users/berke/CLionProjects/DataBaseApplication/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/berke/CLionProjects/DataBaseApplication/cmake-build-debug/CMakeFiles/rebuild_cache.dir

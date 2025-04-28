@@ -1,0 +1,5 @@
+# ninja log v6
+25	2533	7674924876912785	CMakeFiles/DataBaseApplication.dir/main.cpp.obj	4da637171973b9a1
+19	10062	7674491482058385	CMakeFiles/sqlite3.dir/sqlite3/sqlite3.c.obj	f08be30252b179e7
+10065	10218	7674491582522770	libsqlite3.a	24848f84392935ed
+2534	2932	7674924901987541	DataBaseApplication.exe	54f33e601b15246e
