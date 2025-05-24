@@ -1,11 +1,14 @@
 #include <iostream>
 #include <string>
+
+#include "Student.h"
+#include "User.h"
 #include "sqlite3/sqlite3.h"
-#include "curl/curl.h"
+/*#include "curl/curl.h"*/
 
 static int callback(void *NotUsed, int argc, char **argv, char **azColName) {
-    int i;
-    for(i = 0; i<argc; i++) {
+    for (int i = 0; i < argc; i++)
+    {
         printf("%s = %s\n", azColName[i], argv[i] ? argv[i] : "NULL");
     }
     printf("\n");
@@ -13,7 +16,14 @@ static int callback(void *NotUsed, int argc, char **argv, char **azColName) {
 }
 
 int main() {
-    sqlite3 *db;
+
+    User* user1 = new Student("g12j45l89", "Mustafa", "Say", "mustafasay@gmail.com", "mustafa123", "Software");
+    user1->createTable();
+    user1->insertUser();
+    //user1->deleteUser((std::string&)"123456");
+    //user1.createTable();
+    //user1.insertUser();
+    /*sqlite3 *db;
     char* zErrMsg = nullptr;
     int rc;
     std::string sql;
@@ -38,7 +48,7 @@ int main() {
         sqlite3_free(zErrMsg);
     }
     fprintf(stderr, "Create table complete\n");
-    /* Create SQL statement */
+    /* Create SQL statement #1#
     sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) "  \
           "VALUES (1, 'Paul', 32, 'California', 20000.00 ); " \
           "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) "  \
@@ -56,11 +66,6 @@ int main() {
     else {
         fprintf(stderr, "Insert completed\n");
     }
-    sqlite3_close(db);
+    sqlite3_close(db);*/
     return 0;
 }
-
-// TIP See CLion help at <a
-// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
-//  Also, you can try interactive lessons for CLion by selecting
-//  'Help | Learn IDE Features' from the main menu.

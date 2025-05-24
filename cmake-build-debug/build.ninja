@@ -52,6 +52,7 @@ build cmake_object_order_depends_target_sqlite3: phony || .
 build CMakeFiles/sqlite3.dir/sqlite3/sqlite3.c.obj: C_COMPILER__sqlite3_unscanned_Debug C$:/Users/berke/CLionProjects/DataBaseApplication/sqlite3/sqlite3.c || cmake_object_order_depends_target_sqlite3
   DEP_FILE = CMakeFiles\sqlite3.dir\sqlite3\sqlite3.c.obj.d
   FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/curl
   OBJECT_DIR = CMakeFiles\sqlite3.dir
   OBJECT_FILE_DIR = CMakeFiles\sqlite3.dir\sqlite3
 
@@ -83,12 +84,21 @@ build cmake_object_order_depends_target_DataBaseApplication: phony || cmake_obje
 build CMakeFiles/DataBaseApplication.dir/main.cpp.obj: CXX_COMPILER__DataBaseApplication_unscanned_Debug C$:/Users/berke/CLionProjects/DataBaseApplication/main.cpp || cmake_object_order_depends_target_DataBaseApplication
   DEP_FILE = CMakeFiles\DataBaseApplication.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/curl
   OBJECT_DIR = CMakeFiles\DataBaseApplication.dir
   OBJECT_FILE_DIR = CMakeFiles\DataBaseApplication.dir
 
 build CMakeFiles/DataBaseApplication.dir/User.cpp.obj: CXX_COMPILER__DataBaseApplication_unscanned_Debug C$:/Users/berke/CLionProjects/DataBaseApplication/User.cpp || cmake_object_order_depends_target_DataBaseApplication
   DEP_FILE = CMakeFiles\DataBaseApplication.dir\User.cpp.obj.d
   FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/curl
+  OBJECT_DIR = CMakeFiles\DataBaseApplication.dir
+  OBJECT_FILE_DIR = CMakeFiles\DataBaseApplication.dir
+
+build CMakeFiles/DataBaseApplication.dir/Student.cpp.obj: CXX_COMPILER__DataBaseApplication_unscanned_Debug C$:/Users/berke/CLionProjects/DataBaseApplication/Student.cpp || cmake_object_order_depends_target_DataBaseApplication
+  DEP_FILE = CMakeFiles\DataBaseApplication.dir\Student.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/curl
   OBJECT_DIR = CMakeFiles\DataBaseApplication.dir
   OBJECT_FILE_DIR = CMakeFiles\DataBaseApplication.dir
 
@@ -100,7 +110,7 @@ build CMakeFiles/DataBaseApplication.dir/User.cpp.obj: CXX_COMPILER__DataBaseApp
 #############################################
 # Link the executable DataBaseApplication.exe
 
-build DataBaseApplication.exe: CXX_EXECUTABLE_LINKER__DataBaseApplication_Debug CMakeFiles/DataBaseApplication.dir/main.cpp.obj CMakeFiles/DataBaseApplication.dir/User.cpp.obj | libsqlite3.a || libsqlite3.a
+build DataBaseApplication.exe: CXX_EXECUTABLE_LINKER__DataBaseApplication_Debug CMakeFiles/DataBaseApplication.dir/main.cpp.obj CMakeFiles/DataBaseApplication.dir/User.cpp.obj CMakeFiles/DataBaseApplication.dir/Student.cpp.obj | libsqlite3.a || libsqlite3.a
   FLAGS = -g
   LINK_LIBRARIES = libsqlite3.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\DataBaseApplication.dir
