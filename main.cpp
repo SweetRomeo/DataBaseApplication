@@ -16,10 +16,10 @@ static int callback(void *NotUsed, int argc, char **argv, char **azColName) {
 }
 
 int main() {
-
-    User* user1 = new Student("g12j45l89", "Mustafa", "Say", "mustafasay@gmail.com", "mustafa123", "Software");
+    User* user1 = new Student("g12j45l89", "Mustafa", "Say", "mustafasay@gmail.com", "mustafa123", 12);
     user1->createTable();
     user1->insertUser();
+    //user1->deleteUser("g12j45l89");
     //user1->deleteUser((std::string&)"123456");
     //user1.createTable();
     //user1.insertUser();

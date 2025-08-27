@@ -29,12 +29,13 @@ protected:
     std::string surname;
     std::string email;
     std::string password;
+    int age;
 
     void updateUserInDB();
 public:
     virtual void createTable();
     virtual void insertUser();
-    virtual void deleteUser(std::string& id) = 0;
+    virtual void deleteUser(const std::string& id) = 0;
     static std::string generateID(const size_t &length);
     void setId(const std::string &id);
     std::string getId();

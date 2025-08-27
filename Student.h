@@ -11,18 +11,18 @@ class Student : public User {
 public:
     Student() = delete;
     Student(const std::string &id, const std::string &name, const std::string &surname, const std::string &email,
-            const std::string &password, const std::string &area);
+            const std::string &password, const int &age);
     ~Student() {
         if (!db) {
             sqlite3_close(db);
         }
     }
 private:
-    std::string area;
+    int age;
 public:
     void createTable()override;
     void insertUser()override;
-    void deleteUser(std::string& id)override;
+    void deleteUser(const std::string& id)override;
 };
 
 #endif //STUDENT_H

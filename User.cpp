@@ -74,6 +74,7 @@ void User::insertUser() {
     sqlite3_bind_text(stmt, 3, surname.c_str(), -1, SQLITE_STATIC);
     sqlite3_bind_text(stmt, 4, email.c_str(), -1, SQLITE_STATIC);
     sqlite3_bind_text(stmt, 5, password.c_str(), -1, SQLITE_STATIC);
+    sqlite3_bind_int(stmt, 6, age);
 
     rc = sqlite3_step(stmt);
     if (rc != SQLITE_DONE) {
